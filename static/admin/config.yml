@@ -25,7 +25,7 @@ collections:
     files:
       - label: "Resume"
         name: "resume"
-        file: "content/resume"
+        file: "content/resume.md"
         format: "frontmatter"
         fields:
           - { label: Name, name: name, widget: string }
