@@ -2,6 +2,9 @@
   <div class="container">
     <div>
       <Logo />
+      <div v-for="post of posts" :key="post.slug">
+        {{ post.title }}
+      </div>
       <h1 class="title">whoistobias.me</h1>
       <div class="links">
         <a
@@ -26,9 +29,23 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
 
-export default Vue.extend({})
+export default defineComponent({
+  setup() {
+    const { $content } = useContext()
+    const posts = useAsync(() => $content('blog').fetch())
+
+    return { posts }
+  },
+  head() {
+    return {
+      script: [
+        { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
+      ],
+    }
+  },
+})
 </script>
 
 <style>
