@@ -23,11 +23,12 @@ collections:
   - label: "Static Content"
     name: "content"
     files:
-      - label: "Main Copy"
-        name: "mainCopy"
-        file: "content/mainCopy.md"
+      - label: "Home Content"
+        name: "homeContent"
+        file: "content/homeContent.md"
         format: "frontmatter"
-        widget: "markdown"
+        fields:
+          - { label: Main Copy, name: mainCopy, widget: markdown }
 
       - label: "Resume"
         name: "resume"
