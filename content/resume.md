@@ -3,7 +3,12 @@ name: test
 job-title: tset
 email: sadf
 phone: adfadsf
-intro: asdfdasf
+intro: |-
+  asdfdasf
+
+  **No way bro. INSANE**
+
+  # **Rip**
 work:
   - title: adfads
     company: adsf
