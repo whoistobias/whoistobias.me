@@ -23,6 +23,12 @@ collections:
   - label: "Static Content"
     name: "content"
     files:
+      - label: "Main Copy"
+        name: "mainCopy"
+        file: "content/mainCopy.md"
+        format: "frontmatter"
+        widget: "markdown"
+
       - label: "Resume"
         name: "resume"
         file: "content/resume.md"
