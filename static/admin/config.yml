@@ -28,7 +28,7 @@ collections:
         file: "content/homeContent.md"
         format: "frontmatter"
         fields:
-          - { label: Main Copy, name: mainCopy, widget: markdown }
+          - { label: Body, name: body, widget: markdown }
 
       - label: "Resume"
         name: "resume"
