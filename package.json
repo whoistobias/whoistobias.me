@@ -11,10 +11,14 @@
     "lint": "yarn lint:js"
   },
   "dependencies": {
+    "@fontsource/poppins": "^4.4.5",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/composition-api": "^0.24.4",
+    "@types/animejs": "^3.1.3",
+    "animejs": "^3.2.1",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "screen-tween": "^1.2.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",

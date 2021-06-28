@@ -1,0 +1,15 @@
+@tailwind base;
+
+body {
+  font-family: "Poppins";
+}
+
+h1 {
+  @apply text-6xl mb-3 font-black;
+}
+p {
+  @apply leading-relaxed mb-3;
+}
+a {
+  @apply text-primary underline;
+}

@@ -11,7 +11,6 @@
 import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  layout: 'home',
   setup() {
     const { $content } = useContext()
     const homeContent = useAsync(() => $content('homeContent').fetch())
