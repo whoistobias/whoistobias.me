@@ -39,6 +39,14 @@ collections:
 
       - label: Projects
         name: projects
+        file: content/projects.md
+        format: frontmatter
+        fields:
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - { label: Project Name, name: name, widget: string }
 
       - label: Resume
         name: resume
