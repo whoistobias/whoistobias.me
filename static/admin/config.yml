@@ -6,34 +6,43 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    format: "frontmatter"
+  - name: blog
+    label: Blog
+    folder: content/blog
+    format: frontmatter
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Description, name: description, widget: string }
+      - { label: Body, name: body, widget: markdown }
 
-  - label: "Static Content"
-    name: "content"
+  - label: Static Content
+    name: content
     files:
-      - label: "Home Content"
-        name: "homeContent"
-        file: "content/homeContent.md"
-        format: "frontmatter"
+      - label: Home Content
+        name: homeContent
+        file: content/homeContent.md
+        format: frontmatter
         fields:
           - { label: Body, name: body, widget: markdown }
 
-      - label: "Resume"
-        name: "resume"
-        file: "content/resume.md"
-        format: "frontmatter"
+      - label: Skills
+        name: skills
+        file: content/skills.md
+        format: frontmatter
+        widget: list
+
+      - label: Projects
+        name: projects
+
+      - label: Resume
+        name: resume
+        file: content/resume.md
+        format: frontmatter
         fields:
           - { label: Name, name: name, widget: string }
           - { label: Job Title, name: job-title, widget: string }
