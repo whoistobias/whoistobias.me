@@ -34,7 +34,8 @@ collections:
         name: skills
         file: content/skills.md
         format: frontmatter
-        widget: list
+        fields:
+          - { label: Body, name: body, widget: list }
 
       - label: Projects
         name: projects
