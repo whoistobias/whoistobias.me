@@ -34,8 +34,14 @@ collections:
         name: skills
         file: content/skills.md
         format: frontmatter
+        create: true
         fields:
-          - { label: Body, name: body, widget: list }
+          - label: Skills
+            name: skills
+            widget: list
+            fields:
+              - { label: Skill, name: skill, widget: string }
+              - { label: Icon, name: icon, widget: image }
 
       - label: Projects
         name: projects
