@@ -60,10 +60,26 @@ collections:
         format: frontmatter
         fields:
           - { label: Name, name: name, widget: string }
-          - { label: Job Title, name: job-title, widget: string }
-          - { label: Email Address, name: email, widget: string }
-          - { label: Phone Number, name: phone, widget: string }
+          - { label: Job Title, name: jobTitle, widget: string }
+          - {
+              label: AES Encrypted Email Address,
+              name: encryptedEmail,
+              widget: string,
+            }
+          - {
+              label: AES Encrypted Phone Number,
+              name: encryptedPhone,
+              widget: string,
+            }
           - { label: Intro, name: intro, widget: markdown }
+          - label: Education
+            name: education
+            widget: list
+            fields:
+              - { label: Degree, name: degree, widget: string }
+              - { label: Institution, name: institution, widget: string }
+              - { label: Date, name: date, widget: string }
+              - { label: "Body", name: body, widget: markdown }
           - label: Work
             name: work
             widget: list
