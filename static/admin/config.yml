@@ -71,7 +71,11 @@ collections:
               name: encryptedPhone,
               widget: string,
             }
-          - { label: Intro, name: intro, widget: markdown }
+          - label: Intro
+            name: intro
+            fields:
+              - { label: Body, name: body, widget: markdown }
+
           - label: Education
             name: education
             widget: list
@@ -79,7 +83,7 @@ collections:
               - { label: Degree, name: degree, widget: string }
               - { label: Institution, name: institution, widget: string }
               - { label: Date, name: date, widget: string }
-              - { label: "Body", name: body, widget: markdown }
+              - { label: Body, name: body, widget: markdown }
           - label: Work
             name: work
             widget: list
