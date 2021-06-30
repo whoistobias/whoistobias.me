@@ -20,6 +20,16 @@ collections:
       - { label: Description, name: description, widget: string }
       - { label: Body, name: body, widget: markdown }
 
+  - name: resume
+    label: Resume
+    files:
+      - name: intro
+        label: Intro
+        file: content/resume/intro.md
+        format: frontmatter
+        fields:
+          - { label: Body, name: body, widget: markdown }
+
   - label: Static Content
     name: content
     files:
@@ -73,6 +83,7 @@ collections:
             }
           - label: Intro
             name: intro
+            widget: object
             fields:
               - { label: Body, name: body, widget: markdown }
 
