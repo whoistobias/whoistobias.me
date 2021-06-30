@@ -23,6 +23,37 @@ collections:
   - name: resume
     label: Resume
     files:
+      - name: info
+        label: Info
+        file: content/resume/info.md
+        format: frontmatter
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Job Title, name: jobTitle, widget: string }
+          - {
+              label: AES Encrypted Email Address,
+              name: encryptedEmail,
+              widget: string,
+            }
+          - {
+              label: AES Encrypted Phone Number,
+              name: encryptedPhone,
+              widget: string,
+            }
+      - name: blog
+        label: Blog
+        folder: content/resume/blog
+        format: frontmatter
+        create: true
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        editor:
+          preview: false
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Publish Date, name: date, widget: datetime }
+          - { label: Description, name: description, widget: string }
+          - { label: Body, name: body, widget: markdown }
+
       - name: intro
         label: Intro
         file: content/resume/intro.md
@@ -69,24 +100,6 @@ collections:
         file: content/resume.md
         format: frontmatter
         fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Job Title, name: jobTitle, widget: string }
-          - {
-              label: AES Encrypted Email Address,
-              name: encryptedEmail,
-              widget: string,
-            }
-          - {
-              label: AES Encrypted Phone Number,
-              name: encryptedPhone,
-              widget: string,
-            }
-          - label: Intro
-            name: intro
-            widget: object
-            fields:
-              - { label: Body, name: body, widget: markdown }
-
           - label: Education
             name: education
             widget: list
