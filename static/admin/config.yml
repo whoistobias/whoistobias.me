@@ -48,6 +48,8 @@ collections:
           - { label: Body, name: body, widget: markdown }
       - name: education
         label: Education
+        file: content/resume/education.md
+        format: frontmatter
         widget: list
         fields:
           - { label: Degree, name: degree, widget: string }
@@ -56,6 +58,7 @@ collections:
           - { label: Description, name: markdown, widget: markdown }
       - name: work
         label: Work
+        file: content/resume/work.md
         widget: list
         fields:
           - { label: Job Title, name: title, widget: string }
