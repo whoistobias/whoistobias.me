@@ -24,7 +24,7 @@ collections:
         file: skills
         search_fields: ["skills.*.skill"]
         display_fields: ["skills.*.skill"]
-        value_field: ["skills.*.skill"]
+        value_field: "skills.*.skill"
 
   - name: resume
     label: Resume
