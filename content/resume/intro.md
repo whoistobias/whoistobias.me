@@ -1,3 +1,0 @@
-# Intro
-
-Testing this markdown

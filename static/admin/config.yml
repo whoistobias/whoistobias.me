@@ -6,19 +6,17 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  # - name: blog
-  #   label: Blog
-  #   folder: content/blog
-  #   format: frontmatter
-  #   create: true
-  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-  #   editor:
-  #     preview: false
-  #   fields:
-  #     - { label: Title, name: title, widget: string }
-  #     - { label: Publish Date, name: date, widget: datetime }
-  #     - { label: Description, name: description, widget: string }
-  #     - { label: Body, name: body, widget: markdown }
+  - name: projects
+    label: Projects
+    folder: content/projects
+    format: frontmatter
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Description, name: description, widget: string }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Component, name: component, widget: string }
 
   - name: resume
     label: Resume
@@ -57,7 +55,7 @@ collections:
             fields:
               - { label: Degree, name: degree, widget: string }
               - { label: Institution, name: institution, widget: string }
-              - { label: Date, name: date, widget: string }
+              - { label: Date, name: date, widget: datetime }
               - { label: Description, name: body, widget: markdown }
       - name: work
         label: Work
@@ -70,23 +68,9 @@ collections:
             fields:
               - { label: Job Title, name: title, widget: string }
               - { label: Company Name, name: company, widget: string }
-              - { label: From, name: from, widget: string }
-              - { label: To, name: to, widget: string }
+              - { label: From, name: from, widget: datetime }
+              - { label: To, name: to, widget: datetime }
               - { label: "Description", name: body, widget: markdown }
-
-      # - name: blog
-      #   label: Blog
-      #   folder: content/resume/blog
-      #   format: frontmatter
-      #   create: true
-      #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-      #   editor:
-      #     preview: false
-      #   fields:
-      #     - { label: Title, name: title, widget: string }
-      #     - { label: Publish Date, name: date, widget: datetime }
-      #     - { label: Description, name: description, widget: string }
-      #     - { label: Body, name: body, widget: markdown }
 
   - label: Static Content
     name: content
@@ -110,6 +94,13 @@ collections:
             fields:
               - { label: Skill, name: skill, widget: string }
               - { label: Icon, name: icon, widget: image }
+              - {
+                  label: Strength,
+                  name: strength,
+                  widget: select,
+                  options: ["low", "medium", "high"],
+                  default: ["high"],
+                }
       # - label: Projects
       #   name: projects
       #   file: content/projects.md
