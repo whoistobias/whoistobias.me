@@ -50,22 +50,29 @@ collections:
         label: Education
         file: content/resume/education.md
         format: frontmatter
-        widget: list
         fields:
-          - { label: Degree, name: degree, widget: string }
-          - { label: Institution, name: institution, widget: string }
-          - { label: Date, name: date, widget: string }
-          - { label: Description, name: markdown, widget: markdown }
+          - name: education
+            label: Education
+            widget: list
+            fields:
+              - { label: Degree, name: degree, widget: string }
+              - { label: Institution, name: institution, widget: string }
+              - { label: Date, name: date, widget: string }
+              - { label: Description, name: markdown, widget: markdown }
       - name: work
         label: Work
         file: content/resume/work.md
-        widget: list
+        format: frontmatter
         fields:
-          - { label: Job Title, name: title, widget: string }
-          - { label: Company Name, name: company, widget: string }
-          - { label: From, name: from, widget: string }
-          - { label: To, name: to, widget: string }
-          - { label: "Description", name: markdown, widget: markdown }
+          - name: work
+            label: Work
+            widget: list
+            fields:
+              - { label: Job Title, name: title, widget: string }
+              - { label: Company Name, name: company, widget: string }
+              - { label: From, name: from, widget: string }
+              - { label: To, name: to, widget: string }
+              - { label: "Description", name: markdown, widget: markdown }
 
       # - name: blog
       #   label: Blog
