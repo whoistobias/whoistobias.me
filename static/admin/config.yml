@@ -17,6 +17,13 @@ collections:
       - { label: Description, name: description, widget: string }
       - { label: Body, name: body, widget: markdown }
       - { label: Component, name: component, widget: string }
+      - label: Skills
+        name: skills
+        widget: relation
+        collection: content
+        file: skills
+        search_fields: ["skills.*.skill"]
+        display_fields: ["skills.*.skill"]
 
   - name: resume
     label: Resume
