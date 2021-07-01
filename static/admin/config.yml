@@ -24,6 +24,7 @@ collections:
         file: skills
         search_fields: ["skills.*.skill"]
         display_fields: ["skills.*.skill"]
+        value_field: ["skills.*.skill"]
 
   - name: resume
     label: Resume
@@ -108,13 +109,3 @@ collections:
                   options: ["low", "medium", "high"],
                   default: ["high"],
                 }
-      # - label: Projects
-      #   name: projects
-      #   file: content/projects.md
-      #   format: frontmatter
-      #   fields:
-      #     - label: Projects
-      #       name: projects
-      #       widget: list
-      #       fields:
-      #         - { label: Project Name, name: name, widget: string }
