@@ -14,7 +14,7 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Date, name: date, widget: datetime }
       - { label: Description, name: description, widget: string }
       - { label: Body, name: body, widget: markdown }
       - { label: Component, name: component, widget: string }
@@ -104,10 +104,11 @@ collections:
             fields:
               - { label: Skill, name: skill, widget: string }
               - { label: Icon, name: icon, widget: image }
-              - {
-                  label: Strength,
-                  name: strength,
-                  widget: select,
-                  options: ["low", "medium", "high"],
-                  default: ["high"],
-                }
+              - label: Strength
+                name: strength
+                widget: select
+                options:
+                  - { label: "Low", value: "low" }
+                  - { label: "Medium", value: "medium" }
+                  - { label: "High", value: "high" }
+                default: ["high"]
