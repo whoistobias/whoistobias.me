@@ -10,4 +10,10 @@ work:
       work
 
       ## work
+    body: |-
+      Test body
+
+      # test
+
+      ## test body
 ---
