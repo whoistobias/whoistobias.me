@@ -1,6 +1,6 @@
 ---
 education:
-  - date: 2018-12-01T18:00:00.000Z
+  - date: 2018-12-01
     institution: University of Texas at Arlington
     body: "Minor in French.\r
 
