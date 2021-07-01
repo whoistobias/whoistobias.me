@@ -14,7 +14,14 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Date, name: date, widget: datetime }
+      - {
+          label: Date,
+          name: date,
+          widget: datetime,
+          timeFormat: false,
+          format: YYYY-MM-DD,
+          picker_utc: true,
+        }
       - { label: Description, name: description, widget: string }
       - { label: Body, name: body, widget: markdown }
       - { label: Component, name: component, widget: string }
@@ -65,7 +72,14 @@ collections:
             fields:
               - { label: Degree, name: degree, widget: string }
               - { label: Institution, name: institution, widget: string }
-              - { label: Date, name: date, widget: datetime }
+              - {
+                  label: Date,
+                  name: date,
+                  widget: datetime,
+                  timeFormat: false,
+                  format: YYYY-MM-DD,
+                  picker_utc: true,
+                }
               - { label: Description, name: body, widget: markdown }
       - name: work
         label: Work
@@ -78,8 +92,22 @@ collections:
             fields:
               - { label: Job Title, name: title, widget: string }
               - { label: Company Name, name: company, widget: string }
-              - { label: From, name: from, widget: datetime }
-              - { label: To, name: to, widget: datetime }
+              - {
+                  label: From,
+                  name: from,
+                  widget: datetime,
+                  timeFormat: false,
+                  format: YYYY-MM-DD,
+                  picker_utc: true,
+                }
+              - {
+                  label: To,
+                  name: to,
+                  widget: datetime,
+                  timeFormat: false,
+                  format: YYYY-MM-DD,
+                  picker_utc: true,
+                }
               - { label: "Description", name: body, widget: markdown }
 
   - label: Static Content
