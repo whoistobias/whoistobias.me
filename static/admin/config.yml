@@ -8,6 +8,7 @@ public_folder: /img
 collections:
   - name: projects
     label: Projects
+    label_singular: Project
     folder: content/projects
     format: frontmatter
     create: true
@@ -25,6 +26,7 @@ collections:
         search_fields: ["skills.*.skill"]
         display_fields: ["skills.*.skill"]
         value_field: "skills.*.skill"
+        multiple: true
 
   - name: resume
     label: Resume
