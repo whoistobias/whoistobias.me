@@ -6,19 +6,19 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: blog
-    label: Blog
-    folder: content/blog
-    format: frontmatter
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: Title, name: title, widget: string }
-      - { label: Publish Date, name: date, widget: datetime }
-      - { label: Description, name: description, widget: string }
-      - { label: Body, name: body, widget: markdown }
+  # - name: blog
+  #   label: Blog
+  #   folder: content/blog
+  #   format: frontmatter
+  #   create: true
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - { label: Title, name: title, widget: string }
+  #     - { label: Publish Date, name: date, widget: datetime }
+  #     - { label: Description, name: description, widget: string }
+  #     - { label: Body, name: body, widget: markdown }
 
   - name: resume
     label: Resume
@@ -40,26 +40,43 @@ collections:
               name: encryptedPhone,
               widget: string,
             }
-      - name: blog
-        label: Blog
-        folder: content/resume/blog
-        format: frontmatter
-        create: true
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        editor:
-          preview: false
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Publish Date, name: date, widget: datetime }
-          - { label: Description, name: description, widget: string }
-          - { label: Body, name: body, widget: markdown }
-
       - name: intro
         label: Intro
         file: content/resume/intro.md
         format: frontmatter
         fields:
           - { label: Body, name: body, widget: markdown }
+      - name: education
+        label: Education
+        widget: list
+        fields:
+          - { label: Degree, name: degree, widget: string }
+          - { label: Institution, name: institution, widget: string }
+          - { label: Date, name: date, widget: string }
+          - { label: Description, name: markdown, widget: markdown }
+      - name: work
+        label: Work
+        widget: list
+        fields:
+          - { label: Job Title, name: title, widget: string }
+          - { label: Company Name, name: company, widget: string }
+          - { label: From, name: from, widget: string }
+          - { label: To, name: to, widget: string }
+          - { label: "Description", name: markdown, widget: markdown }
+
+      # - name: blog
+      #   label: Blog
+      #   folder: content/resume/blog
+      #   format: frontmatter
+      #   create: true
+      #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      #   editor:
+      #     preview: false
+      #   fields:
+      #     - { label: Title, name: title, widget: string }
+      #     - { label: Publish Date, name: date, widget: datetime }
+      #     - { label: Description, name: description, widget: string }
+      #     - { label: Body, name: body, widget: markdown }
 
   - label: Static Content
     name: content
@@ -83,37 +100,13 @@ collections:
             fields:
               - { label: Skill, name: skill, widget: string }
               - { label: Icon, name: icon, widget: image }
-
-      - label: Projects
-        name: projects
-        file: content/projects.md
-        format: frontmatter
-        fields:
-          - label: Projects
-            name: projects
-            widget: list
-            fields:
-              - { label: Project Name, name: name, widget: string }
-
-      - label: Resume
-        name: resume
-        file: content/resume.md
-        format: frontmatter
-        fields:
-          - label: Education
-            name: education
-            widget: list
-            fields:
-              - { label: Degree, name: degree, widget: string }
-              - { label: Institution, name: institution, widget: string }
-              - { label: Date, name: date, widget: string }
-              - { label: Body, name: body, widget: markdown }
-          - label: Work
-            name: work
-            widget: list
-            fields:
-              - { label: Job Title, name: title, widget: string }
-              - { label: Company Name, name: company, widget: string }
-              - { label: From, name: from, widget: string }
-              - { label: To, name: to, widget: string }
-              - { label: "Description", name: description, widget: markdown }
+      # - label: Projects
+      #   name: projects
+      #   file: content/projects.md
+      #   format: frontmatter
+      #   fields:
+      #     - label: Projects
+      #       name: projects
+      #       widget: list
+      #       fields:
+      #         - { label: Project Name, name: name, widget: string }
