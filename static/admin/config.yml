@@ -115,7 +115,12 @@ collections:
                   picker_utc: true,
                   required: false,
                 }
-              - { label: Current, name: current, widget: boolean }
+              - {
+                  label: Current,
+                  name: current,
+                  widget: boolean,
+                  required: false,
+                }
               - {
                   label: "Description",
                   name: body,
