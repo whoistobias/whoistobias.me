@@ -92,7 +92,12 @@ collections:
             widget: list
             fields:
               - { label: Job Title, name: title, widget: string }
-              - { label: Company Name, name: company, widget: string }
+              - {
+                  label: Company Name,
+                  name: company,
+                  widget: string,
+                  required: false,
+                }
               - {
                   label: From,
                   name: from,
@@ -108,8 +113,15 @@ collections:
                   timeFormat: false,
                   format: YYYY-MM-DD,
                   picker_utc: true,
+                  required: false,
                 }
-              - { label: "Description", name: body, widget: markdown }
+              - { label: Current, name: current, widget: boolean }
+              - {
+                  label: "Description",
+                  name: body,
+                  widget: markdown,
+                  required: false,
+                }
       - name: awards
         label: Awards
         file: content/resume/awards.md
