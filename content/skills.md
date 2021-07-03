@@ -79,4 +79,6 @@ skills:
     proficiency: 1
   - name: Azure
     proficiency: 2
+  - proficiency: 1
+    name: React
 ---
