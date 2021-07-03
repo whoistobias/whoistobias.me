@@ -140,7 +140,12 @@ collections:
             widget: list
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Organization, name: organization, widget: string }
+              - {
+                  label: Organization,
+                  name: organization,
+                  widget: string,
+                  required: false,
+                }
               - {
                   label: From,
                   name: from,
