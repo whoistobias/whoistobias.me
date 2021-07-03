@@ -23,8 +23,8 @@ collections:
           picker_utc: true,
         }
       - { label: Description, name: description, widget: string }
-      - { label: Body, name: body, widget: markdown }
-      - { label: Component, name: component, widget: string }
+      - { label: Body, name: body, widget: markdown, required: false }
+      - { label: Component, name: component, widget: string, required: false }
       - label: Skills
         name: skills
         widget: relation
@@ -34,6 +34,7 @@ collections:
         display_fields: ["skills.*.skill"]
         value_field: "skills.*.skill"
         multiple: true
+        required: false
 
   - name: resume
     label: Resume
