@@ -32,7 +32,7 @@ collections:
         file: skills
         search_fields: ["skills.*.skill"]
         display_fields: ["skills.*.skill"]
-        value_field: "skills.*.skill"
+        value_field: "skills.*.id"
         multiple: true
         required: false
 
@@ -137,7 +137,7 @@ collections:
                 name: strength
                 widget: select
                 options:
-                  - { label: "Low", value: "low" }
-                  - { label: "Medium", value: "medium" }
-                  - { label: "High", value: "high" }
-                default: ["high"]
+                  - { label: "Low", value: 1 }
+                  - { label: "Medium", value: 2 }
+                  - { label: "High", value: 3 }
+                default: { label: "High", value: 3 }
