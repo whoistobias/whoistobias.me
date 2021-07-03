@@ -131,7 +131,7 @@ collections:
             widget: list
             fields:
               - { label: Skill, name: skill, widget: string }
-              - { label: Icon, name: icon, widget: image }
+              - { label: Icon, name: icon, widget: image, required: false }
               - label: Strength
                 name: strength
                 widget: select
