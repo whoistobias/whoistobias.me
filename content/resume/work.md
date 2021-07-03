@@ -9,6 +9,7 @@ work:
       products such as customer service apps as well as external micro sites.
       Develop and maintain the UI team's package repository. Learn C# as
       necessary to help with back-end.
+    current: true
   - from: 2018-04-15
     to: 2019-06-15
     title: Freelance Full Stack Developer
