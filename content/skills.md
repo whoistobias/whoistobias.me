@@ -6,77 +6,77 @@ skills:
   - skill: EJS
     strength: medium
   - skill: Firebase
-    strength:
+    strength: medium
   - skill: Sass
-    strength:
+    strength: high
   - skill: Angular
-    strength:
+    strength: medium
   - skill: TypeScript
-    strength:
+    strength: medium
   - skill: Ionic
-    strength:
+    strength: medium
   - skill: Cordova
-    strength:
+    strength: low
   - skill: npm
-    strength:
+    strength: high
   - skill: Moment.js
-    strength:
+    strength: high
   - skill: RxJS
-    strength:
+    strength: low
   - skill: Axios.js
-    strength:
+    strength: high
   - skill: Lerna
-    strength:
+    strength: medium
   - skill: Node.js
-    strength:
+    strength: medium
   - skill: VuePress
-    strength:
+    strength: medium
   - skill: WordPress
-    strength:
+    strength: low
   - skill: Html & CSS
-    strength:
+    strength: high
   - skill: PHP
-    strength:
+    strength: medium
   - skill: JS
-    strength:
+    strength: high
   - skill: Gridsome
-    strength:
+    strength: medium
   - skill: Nuxt
-    strength:
+    strength: medium
   - skill: Vuetify
-    strength:
+    strength: high
   - skill: Vuex
-    strength:
+    strength: high
   - skill: p5.js
-    strength:
+    strength: low
   - skill: Express
-    strength:
+    strength: medium
   - skill: MongoDB
-    strength:
+    strength: medium
   - skill: Capacitor
-    strength:
+    strength: low
   - skill: Anime.js
-    strength:
+    strength: high
   - skill: Hammer.js
-    strength:
+    strength: medium
   - skill: Vue Router
-    strength:
+    strength: high
   - skill: Google Cloud Platform
-    strength:
+    strength: medium
   - skill: PostCSS
-    strength:
+    strength: high
   - skill: Tailwind
-    strength:
+    strength: high
   - skill: SQL
-    strength:
+    strength: medium
   - skill: C#
-    strength:
+    strength: medium
   - skill: Webpack
-    strength:
+    strength: medium
   - skill: Rollup
-    strength:
+    strength: low
   - skill: .NET
-    strength:
+    strength: low
   - skill: Azure
-    strength:
+    strength: medium
 ---
