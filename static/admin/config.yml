@@ -30,9 +30,9 @@ collections:
         widget: relation
         collection: content
         file: skills
-        search_fields: ["skills.*.skill"]
-        display_fields: ["skills.*.skill"]
-        value_field: "skills.*.id"
+        search_fields: ["skills.*.name"]
+        display_fields: ["skills.*.name"]
+        value_field: "skills.*.name"
         multiple: true
         required: false
 
@@ -131,10 +131,10 @@ collections:
             name: skills
             widget: list
             fields:
-              - { label: Skill, name: skill, widget: string }
+              - { label: Name, name: name, widget: string }
               - { label: Icon, name: icon, widget: image, required: false }
-              - label: Strength
-                name: strength
+              - label: Proficiency
+                name: proficiency
                 widget: select
                 options:
                   - { label: "Low", value: 1 }
