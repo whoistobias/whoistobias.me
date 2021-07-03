@@ -110,6 +110,55 @@ collections:
                   picker_utc: true,
                 }
               - { label: "Description", name: body, widget: markdown }
+      - name: awards
+        label: Awards
+        file: content/resume/awards.md
+        format: frontmatter
+        fields:
+          - name: awards
+            label: Awards
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Organization, name: organization, widget: string }
+              - {
+                  label: Date,
+                  name: date,
+                  widget: datetime,
+                  timeFormat: false,
+                  format: YYYY-MM-DD,
+                  picker_utc: true,
+                }
+              - { label: Description, name: body, widget: markdown }
+      - name: service
+        label: Service
+        file: content/resume/service.md
+        format: frontmatter
+        fields:
+          - name: service
+            label: Service
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Organization, name: organization, widget: string }
+              - {
+                  label: From,
+                  name: from,
+                  widget: datetime,
+                  timeFormat: false,
+                  format: YYYY-MM-DD,
+                  picker_utc: true,
+                }
+              - {
+                  label: To,
+                  name: to,
+                  widget: datetime,
+                  timeFormat: false,
+                  format: YYYY-MM-DD,
+                  picker_utc: true,
+                  required: false,
+                }
+              - { label: Description, name: body, widget: markdown }
 
   - label: Static Content
     name: content
