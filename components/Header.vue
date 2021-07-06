@@ -14,8 +14,8 @@
           ></path>
         </svg>
       </div>
-      <div class="relative flex z-10 h-16 justify-end items-center px-8">
-        <NuxtLink to="/resume">Resume</NuxtLink>
+      <div class="relative flex z-10 h-16 justify-start items-center px-8">
+        <NuxtLink class="no-underline" to="/">Home</NuxtLink>
         <div
           class="
             pointer-events-none

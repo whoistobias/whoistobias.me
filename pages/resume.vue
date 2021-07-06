@@ -128,7 +128,7 @@
       </div>
     </div>
     <div class="col-span-2 grid grid-cols-3 gap-x-12">
-      <div class="col-span-2">
+      <div class="col-span-2" :class="{ 'col-span-3': !references }">
         <ResumeSectionHeading>Projects</ResumeSectionHeading>
         <div v-for="(item, i) in projects" :key="`projects:${i}`" class="mb-8">
           <h4>
@@ -152,7 +152,7 @@
           <nuxt-content :document="item" />
         </div>
       </div>
-      <div v-if="service">
+      <div v-if="references">
         <ResumeSectionHeading>References</ResumeSectionHeading>
         <div
           v-for="(item, i) in references"

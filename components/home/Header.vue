@@ -15,7 +15,7 @@
         </svg>
       </div>
       <div class="relative flex z-10 h-16 justify-end items-center px-8">
-        <NuxtLink to="/contact">CONTACTs</NuxtLink>
+        <NuxtLink class="no-underline" to="/resume">Resume</NuxtLink>
         <div
           class="
             pointer-events-none

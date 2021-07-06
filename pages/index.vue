@@ -2,7 +2,6 @@
   <div>
     <div class="container max-w-xl py-72">
       <nuxt-content :document="homeContent" />
-      <VaultAmpersand />
     </div>
   </div>
 </template>
