@@ -7,3 +7,4 @@ skills:
   - Vue
   - Vuetify
 ---
+[Warning, there are obnoxious Luigi noises (inside joke), turn volume down](https://whoistobias.github.io/)
