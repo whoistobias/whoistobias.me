@@ -81,4 +81,8 @@ skills:
     proficiency: 2
   - proficiency: 1
     name: React
+  - proficiency: 3
+    name: Netlify
+  - proficiency: 2
+    name: Netlify CMS
 ---
