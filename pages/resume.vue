@@ -241,7 +241,7 @@ export default defineComponent({
       return skills.skills.sort((a, b) => b.proficiency - a.proficiency)
     })
 
-    const projects = useAsync(() => $content('projects').fetch())
+    const projects = useAsync(() => $content('projects').sortBy('date').fetch())
 
     const deets = computed(() => {
       if (
