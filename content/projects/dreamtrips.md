@@ -1,9 +1,8 @@
 ---
 title: Dreamtrips
-date: 2021-06-08
+date: 2021-06-18
 description: Commercial travel booking Vue SPA with a .NET microservice back-end
   architecture
-component: dreamtrips
 skills:
   - Vue
   - Vuetify
@@ -15,4 +14,5 @@ skills:
   - SQL
   - C#
   - .NET
+component: dreamtrips
 ---
