@@ -16,5 +16,3 @@ skills:
   - C#
   - .NET
 ---
-Dreamtrips Content
-[link](https://dreamtrips.com/rtp)
