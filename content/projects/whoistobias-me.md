@@ -1,6 +1,6 @@
 ---
 title: whoistobias.me v2
-date: 2019-12-20
+date: 2020-06-05
 description: The second iteration of my portfolio site, built in Vue with
   Tailwind and powered by Nuxt and Netlify
 skills:
