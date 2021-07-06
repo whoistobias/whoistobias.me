@@ -181,6 +181,24 @@ collections:
                   required: false,
                 }
               - { label: Description, name: body, widget: markdown }
+      - name: references
+        label: References
+        file: content/resume/references.md
+        format: frontmatter
+        fields:
+          - name: references
+            label: References
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Organization, name: organization, widget: string }
+              - {
+                  label: AES Encrypted Contact,
+                  name: encryptedContact,
+                  widget: string,
+                }
+              - { label: Description, name: body, widget: markdown }
 
   - label: Static Content
     name: content
