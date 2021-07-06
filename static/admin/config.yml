@@ -190,15 +190,27 @@ collections:
             label: References
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Position, name: position, widget: string }
-              - { label: Organization, name: organization, widget: string }
+              - { label: Encrypted Name, name: encryptedname, widget: string }
               - {
-                  label: AES Encrypted Contact,
+                  label: Encrypted Position,
+                  name: encryptedPosition,
+                  widget: string,
+                }
+              - {
+                  label: Encrypted Organization,
+                  name: encryptedOrganization,
+                  widget: string,
+                }
+              - {
+                  label: Encrypted Contact,
                   name: encryptedContact,
                   widget: string,
                 }
-              - { label: Description, name: body, widget: markdown }
+              - {
+                  label: Encrypted Description,
+                  name: encryptedDescription,
+                  widget: string,
+                }
 
   - label: Static Content
     name: content
