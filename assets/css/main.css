@@ -1,15 +1,45 @@
 @tailwind base;
 
+@font-face {
+  font-family: 'Museo';
+  src: url('~assets/fonts/Museo-Bold.woff2') format('woff2'),
+    url('~assets/fonts/Museo-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
 body {
-  font-family: "Poppins";
+  font-family: 'CabinVariable', sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Museo';
+  font-weight: 700;
 }
 
 h1 {
-  @apply text-6xl mb-3 font-black;
+  @apply text-4xl mb-3 font-bold;
+}
+h2 {
+  @apply text-2xl mb-3 font-bold;
+}
+h3 {
+  @apply text-xl mb-3 font-bold;
+}
+h4 {
+  @apply font-bold text-lg;
 }
 p {
-  @apply leading-relaxed mb-3;
+  @apply leading-relaxed mb-2 text-sm;
 }
 a {
   @apply text-primary underline;
+}
+
+::selection {
+  @apply bg-primary-dark; /* WebKit/Blink Browsers */
 }

@@ -47,12 +47,12 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: Job Title, name: jobTitle, widget: string }
           - {
-              label: AES Encrypted Email Address,
+              label: Encrypted Email Address,
               name: encryptedEmail,
               widget: string,
             }
           - {
-              label: AES Encrypted Phone Number,
+              label: Encrypted Phone Number,
               name: encryptedPhone,
               widget: string,
             }
@@ -190,7 +190,7 @@ collections:
             label: References
             widget: list
             fields:
-              - { label: Encrypted Name, name: encryptedname, widget: string }
+              - { label: Encrypted Name, name: encryptedName, widget: string }
               - {
                   label: Encrypted Position,
                   name: encryptedPosition,

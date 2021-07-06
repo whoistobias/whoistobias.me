@@ -20,7 +20,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/css/main.css', '@fontsource/poppins'],
+  css: [
+    '~/assets/css/main.css',
+    '@fontsource/cabin/variable-full-italic.css',
+    '@fontsource/cabin/variable-full.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~/plugins/directives.ts'],
@@ -52,5 +56,19 @@ export default {
   generate: {
     // choose to suit your project
     interval: 1000,
+  },
+
+  hooks: {
+    'content:file:beforeInsert': async (document, database) => {
+      const enabled = ['work', 'education', 'service', 'awards']
+      for (const item of enabled) {
+        if (document.slug === item && document[item]) {
+          for (let i = 0; i < document[item].length; i++) {
+            const element = document[item][i]
+            element.body = await database.markdown.generateBody(element.body)
+          }
+        }
+      }
+    },
   },
 }
