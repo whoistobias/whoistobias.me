@@ -1,7 +1,8 @@
 ---
-title: whoistobias.me
+title: whoistobias.me v2
 date: 2021-07-05
-description: My portfolio site, built in Vue and powered by Nuxt and Netlify
+description: The second iteration of my portfolio site, built in Vue with
+  Tailwind and powered by Nuxt and Netlify
 skills:
   - Vue
   - Nuxt
