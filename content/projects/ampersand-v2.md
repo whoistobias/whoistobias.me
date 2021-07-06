@@ -1,7 +1,8 @@
 ---
 title: Ampersand v2
 date: 2019-01-26
-description: Website for a coffee shop & bar in the 7th street district of Fort Worth, Texas
+description: Second version of the website for a coffee shop & bar in the 7th
+  street district of Fort Worth, Texas
 skills:
   - Vue
   - Nuxt
