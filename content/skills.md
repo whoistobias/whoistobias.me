@@ -73,8 +73,6 @@ skills:
     proficiency: 2
   - name: Webpack
     proficiency: 2
-  - name: Rollup
-    proficiency: 1
   - name: .NET
     proficiency: 1
   - name: Azure
@@ -88,5 +86,21 @@ skills:
   - proficiency: 1
     name: Docker
   - proficiency: 1
+    name: ASP.NET
+  - proficiency: 1
+    name: NUnit
+  - proficiency: 1
+    name: MSTest
+  - proficiency: 1
+    name: AutoMapper
+  - proficiency: 1
+    name: Newtonsoft
+  - proficiency: 1
+    name: Swagger
+  - proficiency: 1
+    name: Entity Framework
+  - proficiency: 1
     name: Kubernetes
+  - name: Rollup
+    proficiency: 1
 ---
