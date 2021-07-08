@@ -85,4 +85,8 @@ skills:
     name: Netlify
   - proficiency: 2
     name: Netlify CMS
+  - proficiency: 1
+    name: Docker
+  - proficiency: 1
+    name: Kubernetes
 ---
