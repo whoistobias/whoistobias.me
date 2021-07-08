@@ -1,20 +1,23 @@
 <template>
-  <div v-if="info" class="container max-w-3xl py-12 grid grid-cols-2 gap-12">
+  <div
+    v-if="info"
+    class="container max-w-3xl py-12 grid grid-cols-2 gap-12 px-4"
+  >
     <h1 class="col-span-2">Resume &amp; CV</h1>
-    <div>
+    <div class="col-span-2 sm:col-span-1">
       <h2 class="m-0">{{ info.name }}</h2>
       <div class="text-sm">{{ info.jobTitle }}</div>
     </div>
-    <div v-if="deets">
+    <div v-if="deets" class="col-span-2 sm:col-span-1">
       <ResumeSectionHeading>Contact</ResumeSectionHeading>
       <div class="text-sm">{{ deets.email }}</div>
       <div class="text-sm">{{ deets.phone }}</div>
     </div>
-    <div class="col-start-1">
+    <div class="col-start-1 col-span-2 sm:col-span-1">
       <ResumeSectionHeading>Intro</ResumeSectionHeading>
       <nuxt-content :document="intro" />
     </div>
-    <div v-if="education">
+    <div v-if="education" class="col-span-2 sm:col-span-1">
       <ResumeSectionHeading>Education</ResumeSectionHeading>
       <div
         v-for="(item, i) in education.education"
@@ -35,7 +38,7 @@
       </div>
     </div>
     <div class="col-span-2 grid grid-cols-3 gap-x-12">
-      <div v-if="work" class="col-span-2">
+      <div v-if="work" class="sm:col-span-2 col-span-3">
         <ResumeSectionHeading>Work</ResumeSectionHeading>
         <div v-for="(item, i) in work.work" :key="`work:${i}`" class="mb-8">
           <h4>
@@ -52,7 +55,7 @@
           <nuxt-content :document="item" />
         </div>
       </div>
-      <div v-if="skills">
+      <div v-if="skills" class="sm:col-span-1 col-span-3">
         <ResumeSectionHeading>Proficiencies</ResumeSectionHeading>
         <ul>
           <li
@@ -93,7 +96,7 @@
         </ul>
       </div>
     </div>
-    <div v-if="awards">
+    <div v-if="awards" class="sm:col-span-1 col-span-2">
       <ResumeSectionHeading>Recognitions</ResumeSectionHeading>
       <div v-for="(item, i) in awards.awards" :key="`awards:${i}`" class="mb-8">
         <h4>
@@ -108,7 +111,7 @@
         <nuxt-content :document="item" />
       </div>
     </div>
-    <div v-if="service">
+    <div v-if="service" class="sm:col-span-1 col-span-2">
       <ResumeSectionHeading>Organizations &amp; Service</ResumeSectionHeading>
       <div
         v-for="(item, i) in service.service"
@@ -128,7 +131,10 @@
       </div>
     </div>
     <div class="col-span-2 grid grid-cols-3 gap-x-12">
-      <div class="col-span-2" :class="{ 'col-span-3': !references }">
+      <div
+        class="sm:col-span-2 col-span-3"
+        :class="{ 'col-span-3': !references, 'sm:col-span-3': !references }"
+      >
         <ResumeSectionHeading>Projects</ResumeSectionHeading>
         <div v-for="(item, i) in projects" :key="`projects:${i}`" class="mb-8">
           <h4>
@@ -152,7 +158,7 @@
           <nuxt-content :document="item" />
         </div>
       </div>
-      <div v-if="references">
+      <div v-if="references" class="sm:col-span-1 col-span-3">
         <ResumeSectionHeading>References</ResumeSectionHeading>
         <div
           v-for="(item, i) in references"
