@@ -16,5 +16,10 @@ skills:
   - .NET
   - Docker
   - Kubernetes
+  - NUnit
+  - AutoMapper
+  - Newtonsoft
+  - Swagger
+  - ASP.NET
 component: dreamtrips
 ---
