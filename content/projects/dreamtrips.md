@@ -14,5 +14,7 @@ skills:
   - SQL
   - C#
   - .NET
+  - Docker
+  - Kubernetes
 component: dreamtrips
 ---
