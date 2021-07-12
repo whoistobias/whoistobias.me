@@ -21,5 +21,7 @@ skills:
   - Newtonsoft
   - Swagger
   - ASP.NET
+  - Jest
+  - Cypress
 component: dreamtrips
 ---
