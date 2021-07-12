@@ -13,7 +13,7 @@
       <div class="text-sm">{{ deets.email }}</div>
       <div class="text-sm">{{ deets.phone }}</div>
     </div>
-    <div class="col-start-1 col-span-2 sm:col-span-1">
+    <div class="col-start-1 col-end-3 sm:col-end-2">
       <ResumeSectionHeading>Intro</ResumeSectionHeading>
       <nuxt-content :document="intro" />
     </div>
