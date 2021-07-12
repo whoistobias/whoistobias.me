@@ -105,4 +105,8 @@ skills:
     proficiency: 1
   - proficiency: 2
     name: SVG
+  - proficiency: 2
+    name: Jest
+  - proficiency: 2
+    name: Cypress
 ---
