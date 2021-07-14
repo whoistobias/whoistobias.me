@@ -40,10 +40,4 @@ work:
     company: Dallas County Community College District, Dallas TX
     body: Aided with instructing three music theory courses. Met with students for
       individual study aid.
-  - from: 2010-08-01
-    to: 2012-09-01
-    title: Prepress Specialist
-    company: Technology Media Group, Dallas TX
-    body: Accurately & efficiently prepared layouts for print. Assisted art
-      department when needed.
 ---
