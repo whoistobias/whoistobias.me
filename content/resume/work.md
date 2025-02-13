@@ -1,5 +1,16 @@
 ---
 work:
+  - from: 2021-08-01
+    to: 2024-04-01
+    title: Architect
+    company: Zaelab
+    body: Led development team in designing and implementing Portul, a multi-tenant
+      B2B commerce platform built on a microservice architecture. Served as
+      primary code contributor and technical lead, designing a modular
+      integration system enabling seamless connectivity with major e-commerce
+      platforms including Shopify and Commercetools. Delivered consulting
+      services for solutions in a variety of enterprise B2B platforms including
+      Salesforce and SAP.
   - from: 2019-06-01
     to: 2021-06-01
     title: UI Developer
@@ -9,7 +20,7 @@ work:
       products such as customer service apps as well as external micro sites.
       Develop and maintain the UI team's package repository. Learn C# as
       necessary to help with back-end.
-    current: true
+    current: false
   - from: 2018-04-01
     to: 2019-06-01
     title: Freelance Full Stack Developer
