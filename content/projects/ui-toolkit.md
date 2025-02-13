@@ -13,5 +13,3 @@ skills:
   - Webpack
   - Rollup
 ---
-[Packages](https://www.npmjs.com/search?q=%40ui-toolkit)
-[Documentation](https://uitoolkitdocs.dev.roviatest.com/)
