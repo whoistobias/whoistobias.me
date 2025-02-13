@@ -109,4 +109,8 @@ skills:
     name: Jest
   - proficiency: 2
     name: Cypress
+  - proficiency: 2
+    name: Rust
+  - proficiency: 3
+    name: Shopify
 ---
