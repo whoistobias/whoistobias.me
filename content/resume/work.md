@@ -1,5 +1,11 @@
 ---
 work:
+  - from: 2024-04-01
+    to: 2025-02-13
+    title: Independent Consultant
+    current: true
+    body: Provide strategic technical leadership and architecture consulting to
+      clients across B2B commerce initiatives.
   - from: 2021-08-01
     to: 2024-04-01
     title: Architect
