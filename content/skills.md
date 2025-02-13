@@ -112,5 +112,17 @@ skills:
   - proficiency: 2
     name: Rust
   - proficiency: 3
+    name: RabbitMQ
+  - proficiency: 3
     name: Shopify
+  - proficiency: 2
+    name: Commercetools
+  - proficiency: 3
+    name: NestJS
+  - proficiency: 1
+    name: Actix
+  - proficiency: 2
+    name: Godot
+  - proficiency: 1
+    name: Bevy
 ---
