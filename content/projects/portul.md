@@ -9,5 +9,7 @@ skills:
   - Tailwind
   - Node.js
   - Shopify
+  - Commercetools
+  - NestJS
 ---
 [portul.io](https://www.portul.io/)
