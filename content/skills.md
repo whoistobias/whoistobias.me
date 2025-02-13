@@ -3,8 +3,6 @@ skills:
   - name: Vue
     icon: /img/vue.js_logo_2.svg
     proficiency: 3
-  - name: EJS
-    proficiency: 2
   - name: Firebase
     proficiency: 2
   - name: Sass
@@ -125,4 +123,8 @@ skills:
     name: Godot
   - proficiency: 1
     name: Bevy
+  - proficiency: 3
+    name: Dart
+  - proficiency: 2
+    name: Flutter
 ---
