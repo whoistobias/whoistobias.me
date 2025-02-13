@@ -8,5 +8,6 @@ skills:
   - TypeScript
   - Tailwind
   - Node.js
+  - Shopify
 ---
 [portul.io](https://www.portul.io/)
